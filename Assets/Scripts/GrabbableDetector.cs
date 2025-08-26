@@ -7,6 +7,7 @@ public class GrabbableDetector : MonoBehaviour
     private Grabbable grabbable_in_range;
     private SpringJoint2D grab_joint;
     private Rigidbody2D rb;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Grabbable grabbable = collision.attachedRigidbody.GetComponent<Grabbable>();
@@ -15,6 +16,7 @@ public class GrabbableDetector : MonoBehaviour
             grabbable_in_range = grabbable;
         }
     }
+
     private void OnTriggerExit2D(Collider2D collision)
     {
         if(grabbable_in_range != null && grabbable_in_range == collision.attachedRigidbody.GetComponent<Grabbable>())

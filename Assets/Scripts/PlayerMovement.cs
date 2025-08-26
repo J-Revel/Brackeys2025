@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnDestroy()
     {
-        Cursor.lockState= CursorLockMode.None;
+        Cursor.lockState = CursorLockMode.None;
     }
 
     void Update()

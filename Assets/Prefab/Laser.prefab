@@ -54,6 +54,8 @@ SpriteRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -75,6 +77,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -127,14 +130,14 @@ RelativeJoint2D:
   serializedVersion: 4
   m_EnableCollision: 0
   m_ConnectedRigidBody: {fileID: 8320624730658780419}
-  m_BreakForce: 500
-  m_BreakTorque: 500
+  m_BreakForce: 1000
+  m_BreakTorque: 1000
   m_BreakAction: 3
-  m_MaxForce: 500
-  m_MaxTorque: 400
-  m_CorrectionScale: 0.3
-  m_AutoConfigureOffset: 1
-  m_LinearOffset: {x: 0.34000012, y: 0.00000016391277}
+  m_MaxForce: 1000
+  m_MaxTorque: 600
+  m_CorrectionScale: 0.1
+  m_AutoConfigureOffset: 0
+  m_LinearOffset: {x: 0.35, y: 0}
   m_AngularOffset: 0
 --- !u!1 &8010235561787352524
 GameObject:
@@ -223,6 +226,8 @@ SpriteRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -244,6 +249,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0

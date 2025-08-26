@@ -140,7 +140,7 @@ TextureImporter:
         width: 749
         height: 752
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -149,6 +149,28 @@ TextureImporter:
       bones: []
       spriteID: 0cf92d4346c493145b33184dc942f22e
       internalID: -792366735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 1248
+        width: 276
+        height: 297
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03948132}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56c0a433d5f6fe24890ddab2c16230f1
+      internalID: 2003175768
       vertices: []
       indices: 
       edges: []
@@ -168,6 +190,7 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Cookie: -792366735
+      Hat: 2003175768
       Robot: -1766760492
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
