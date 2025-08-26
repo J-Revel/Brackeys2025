@@ -1,0 +1,9 @@
+﻿.vs
+Builds
+Recordings
+UserSettings
+Logs
+Library
+obj
+*.csproj
+*.sln
