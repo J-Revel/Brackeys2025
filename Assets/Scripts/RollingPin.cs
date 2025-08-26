@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Linq;
 
 public class RollingPin : MonoBehaviour
 {
@@ -9,7 +10,10 @@ public class RollingPin : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Destroy(collision.gameObject);
+        string[] undestroyables = { "Cookie Detector" };
+        if (!undestroyables.Contains(collision.gameObject.name)) {
+            Destroy(collision.gameObject);
+        }
     }
 
     void Update()
