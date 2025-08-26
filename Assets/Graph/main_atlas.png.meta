@@ -175,6 +175,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: RollingPin
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 1110
+        width: 496
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a210513a59036f1689d2a5d5d2ffb6f1
+      internalID: 1672364954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -192,6 +214,7 @@ TextureImporter:
       Cookie: -792366735
       Hat: 2003175768
       Robot: -1766760492
+      RollingPin: 1672364954
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

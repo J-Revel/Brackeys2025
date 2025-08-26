@@ -1,0 +1,19 @@
+using UnityEngine;
+
+public class RollingPin : MonoBehaviour
+{
+    void Start()
+    {
+        
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Destroy(collision.gameObject);
+    }
+
+    void Update()
+    {
+        GetComponent<SpriteRenderer>().transform.Rotate(new Vector3(0, 0, 90 * Time.deltaTime));
+    }
+}

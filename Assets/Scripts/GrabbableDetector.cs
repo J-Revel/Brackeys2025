@@ -10,10 +10,14 @@ public class GrabbableDetector : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Grabbable grabbable = collision.attachedRigidbody.GetComponent<Grabbable>();
-        if(grabbable != null)
+        Rigidbody2D arb = collision.attachedRigidbody;
+        if (arb != null)
         {
-            grabbable_in_range = grabbable;
+            Grabbable grabbable = arb.GetComponent<Grabbable>();
+            if(grabbable != null)
+            {
+                grabbable_in_range = grabbable;
+            }
         }
     }
 
