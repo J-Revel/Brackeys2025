@@ -285,6 +285,50 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: RollingPin
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 1120
+        width: 487
+        height: 304
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7f3e8b3cffb305029187fd41914364b
+      internalID: -12407924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halo
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 715
+        width: 74
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab96951804ec841a99adb993c3d727eb
+      internalID: 1873823307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -300,8 +344,10 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Cookie: -792366735
+      Halo: 1873823307
       Hat: 2003175768
       Robot: -1766760492
+      RollingPin: -12407924
       arm_ball_01: 2097120480
       arm_ball_02: 533447873
       arm_full: -1696159981
