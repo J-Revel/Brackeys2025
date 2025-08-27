@@ -63,7 +63,7 @@ Material:
     - _Crack_Max: 0.8
     - _Crack_Min: 0
     - _Crack_Thickness: 1.14
-    - _Destruction: 1
+    - _Destruction: 0
     m_Colors:
     - _Crack_Color: {r: 0.23584908, g: 0.12758528, b: 0.107912086, a: 1}
     - _Damaged_Tint: {r: 0.49056602, g: 0.45392784, b: 0.4466002, a: 1}
