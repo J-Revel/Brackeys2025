@@ -11,7 +11,8 @@ public class RollingPin : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         string[] undestroyables = { "Cookie Detector" };
-        if (!undestroyables.Contains(collision.gameObject.name)) {
+        if (!undestroyables.Contains(collision.gameObject.name))
+        {
             Destroy(collision.gameObject);
         }
     }

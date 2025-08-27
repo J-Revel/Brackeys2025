@@ -55,7 +55,7 @@ public class GrabbableDetector : MonoBehaviour
                 player_movement.target_position = hit.point;
             }
         }
-        if (grab_joint != null)
+        if (grab_joint != null && grab_joint.connectedBody != null)
         {
             float3 target_pos = grab_joint.connectedBody.transform.TransformPoint(grab_joint.connectedAnchor);
             player_movement.target_position = target_pos.xy;
