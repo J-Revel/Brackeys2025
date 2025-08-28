@@ -3183,11 +3183,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2151551301442554078, guid: 7fabd6ba4f2dd5349bb7c336cd16f619, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20.8
+      value: 67.97
       objectReference: {fileID: 0}
     - target: {fileID: 2151551301442554078, guid: 7fabd6ba4f2dd5349bb7c336cd16f619, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.9
+      value: 2.01
       objectReference: {fileID: 0}
     - target: {fileID: 2151551301442554078, guid: 7fabd6ba4f2dd5349bb7c336cd16f619, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4006,6 +4006,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &975767785
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 975767786}
+  - component: {fileID: 975767787}
+  m_Layer: 0
+  m_Name: Cookie Destruction HAndler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &975767786
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975767785}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1477803423}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &975767787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975767785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64c81f12bd2542d40b59145e52c13a24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CookieDestructionHandler
+  prefab: {fileID: 5746345784278725835, guid: 4a8c0b946a2cf014fb3f40923d55d180, type: 3}
+  lifetime: 2
 --- !u!1 &979111384
 GameObject:
   m_ObjectHideFlags: 0
@@ -6798,6 +6844,7 @@ MonoBehaviour:
   raycast_distance: 50
   impact_vfx: {fileID: 1731455989}
   line_renderer: {fileID: 0}
+  mode: 0
 --- !u!120 &1421625582
 LineRenderer:
   serializedVersion: 2
@@ -7436,6 +7483,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1477803422
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1477803423}
+  m_Layer: 0
+  m_Name: Singletons
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1477803423
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1477803422}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 975767786}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1482822818
 GameObject:
   m_ObjectHideFlags: 0
@@ -15073,6 +15152,7 @@ GameObject:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1477803423}
   - {fileID: 330585546}
   - {fileID: 742104556}
   - {fileID: 832575519}
