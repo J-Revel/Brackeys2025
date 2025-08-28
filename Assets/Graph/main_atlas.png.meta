@@ -316,7 +316,7 @@ TextureImporter:
         width: 74
         height: 89
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -325,6 +325,50 @@ TextureImporter:
       bones: []
       spriteID: ab96951804ec841a99adb993c3d727eb
       internalID: 1873823307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_enemy_up
+      rect:
+        serializedVersion: 2
+        x: 2555
+        y: 164
+        width: 601
+        height: 864
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80a5685ae8ece754ea5d6f6c1e2face5
+      internalID: 442851297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: laser_enemy_down
+      rect:
+        serializedVersion: 2
+        x: 2573
+        y: 1044
+        width: 655
+        height: 867
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: accf437cc337f344c9d375f6cbd9644a
+      internalID: -848571890
       vertices: []
       indices: 
       edges: []
@@ -353,6 +397,8 @@ TextureImporter:
       arm_full: -1696159981
       arm_part_01: 1645900457
       hand_01: -864309926
+      laser_enemy_down: -848571890
+      laser_enemy_up: 442851297
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
