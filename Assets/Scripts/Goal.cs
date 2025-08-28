@@ -3,11 +3,10 @@ using TMPro;
 public class Goal : MonoBehaviour
 {
     public static int score;
-    private TMP_Text label;
+    public TMP_Text label;
     void Start()
     {
         score = 0;
-        label = GetComponentInChildren<TMP_Text>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -241,6 +241,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Goal
+      rect:
+        serializedVersion: 2
+        x: 2028
+        y: 321
+        width: 862
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 860eb2d4a72882d4ca67f5cdf9e29d87
+      internalID: -1095402895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -257,6 +279,7 @@ TextureImporter:
     nameFileIdTable:
       CookieMaker: 1609191435
       CookieMaker Top: 1870392420
+      Goal: -1095402895
       Grow Laser: -2125635523
       Lever: -2140795438
       Lever Ground: -1371225408
