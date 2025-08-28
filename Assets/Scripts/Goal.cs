@@ -1,26 +1,26 @@
 using UnityEngine;
-
+using TMPro;
 public class Goal : MonoBehaviour
 {
     public static int score;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private TMP_Text label;
     void Start()
     {
         score = 0;
+        label = GetComponentInChildren<TMP_Text>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.name[..6] == "Cookie" && collision.gameObject.name.Length < 15)
         {
+            score += (int) collision.attachedRigidbody.mass;
             Destroy(collision.gameObject);
-            score += 1;
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        label.text = "Score: " + score;
     }
 }
