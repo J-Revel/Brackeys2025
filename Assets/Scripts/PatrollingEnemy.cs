@@ -11,7 +11,8 @@ public class PatrollingEnemy : MonoBehaviour
     public float patrolling_step_force = 10;
     private float patrolling_step_time = 0;
     private float patrolling_step_direction = 1;
-    public float target_angle = 0;
+    public bool follow_target = false;
+    public float target_angle_offset = 0;
     public float balance_torque = 10;
     public float2 balance_angle_smoothstep = new float2(0, math.PI / 5);
     void Start()
@@ -22,6 +23,11 @@ public class PatrollingEnemy : MonoBehaviour
     void FixedUpdate()
     {
         float current_angle = transform.rotation.eulerAngles.z;
+        float target_angle = target_angle_offset;
+        if(follow_target)
+        {
+            target_angle += (patrolling_step_direction > 0 ? 0 : 180);
+        }
         float angle_offset = (target_angle - current_angle) * math.PI / 180;
         while (angle_offset < -math.PI)
             angle_offset += math.PI * 2;

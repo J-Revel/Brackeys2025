@@ -3,6 +3,7 @@ using System.Linq;
 
 public class RollingPin : MonoBehaviour
 {
+    public float rotation_speed = 0;
     void Start()
     {
         
@@ -19,6 +20,6 @@ public class RollingPin : MonoBehaviour
 
     void Update()
     {
-        GetComponent<SpriteRenderer>().transform.Rotate(new Vector3(0, 0, 90 * Time.deltaTime));
+        GetComponent<SpriteRenderer>().transform.Rotate(new Vector3(0, 0, rotation_speed * Time.deltaTime));
     }
 }

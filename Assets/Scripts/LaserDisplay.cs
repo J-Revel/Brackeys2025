@@ -37,6 +37,9 @@ public class LaserDisplay : MonoBehaviour
                         growable.Grow(Time.deltaTime);
                     break;
                 case LaserMode.Damage:
+                    Cookie cookie = hit.collider.GetComponent<Cookie>();
+                    if (cookie != null)
+                        Destroy(cookie.gameObject);
                     break;
             }
         }

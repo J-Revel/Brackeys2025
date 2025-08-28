@@ -330,15 +330,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: laser_enemy_up
+      name: Melee Enemy
       rect:
         serializedVersion: 2
-        x: 2555
-        y: 164
-        width: 601
-        height: 864
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 2434
+        y: 192
+        width: 376
+        height: 705
+      alignment: 9
+      pivot: {x: 0.52156556, y: 0.7349064}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -373,6 +373,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Melee Enemy Head
+      rect:
+        serializedVersion: 2
+        x: 2841
+        y: 680
+        width: 387
+        height: 268
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02118f675c6c2c2479108bee34188db6
+      internalID: 1543230973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -390,6 +412,8 @@ TextureImporter:
       Cookie: -792366735
       Halo: 1873823307
       Hat: 2003175768
+      Melee Enemy: 442851297
+      Melee Enemy Head: 1543230973
       Robot: -1766760492
       RollingPin: -12407924
       arm_ball_01: 2097120480
@@ -398,7 +422,6 @@ TextureImporter:
       arm_part_01: 1645900457
       hand_01: -864309926
       laser_enemy_down: -848571890
-      laser_enemy_up: 442851297
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
