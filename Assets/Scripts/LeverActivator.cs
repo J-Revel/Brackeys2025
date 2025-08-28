@@ -13,14 +13,14 @@ public class LeverActivator : MonoBehaviour
         joint = GetComponent<HingeJoint2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         bool in_activation_range = joint.jointAngle > activation_angle_range.x && joint.jointAngle < activation_angle_range.y;
         if(in_activation_range != activated)
         {
             activated = in_activation_range;
-            activation_event.Invoke();
+            if(activated)
+                activation_event.Invoke();
         }
     }
 }

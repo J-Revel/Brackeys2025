@@ -1,9 +1,11 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 public class Goal : MonoBehaviour
 {
     public static int score;
     public TMP_Text label;
+    public UnityEvent score_event;
     void Start()
     {
         score = 0;
@@ -29,11 +31,14 @@ public class Goal : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name[..6] == "Cookie" && collision.gameObject.name.Length < 15)
+        if (collision.GetComponent<Cookie>() != null)
         {
             score += (int) collision.attachedRigidbody.mass;
-            GameObject.Find("Cookie Detector").GetComponent<GrabbableDetector>().Detach();
-            StartCoroutine(ShrinkAndDestroyCoroutine(collision));
+            label.text = "Score : " + score;
+            score_event.Invoke();
+            Destroy(collision.gameObject);
+            //GameObject.Find("Cookie Detector").GetComponent<GrabbableDetector>().Detach();
+            //StartCoroutine(ShrinkAndDestroyCoroutine(collision));
         }
     }
 

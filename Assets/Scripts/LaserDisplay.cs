@@ -15,6 +15,9 @@ public class LaserDisplay : MonoBehaviour
     public LineRenderer line_renderer;
     public LaserMode mode;
     public float damage = 1;
+    public AudioSource effect_source;
+    public float effect_sound_interval = 0.5f;
+    private float effect_sound_time = 0;
 
     void Start()
     {
@@ -35,12 +38,29 @@ public class LaserDisplay : MonoBehaviour
                 case LaserMode.Grow:
                     Growable growable = hit.collider.GetComponent<Growable>();
                     if (growable != null)
+                    {
                         growable.Grow(Time.deltaTime);
+                        effect_sound_time -= Time.deltaTime;
+                        if (effect_sound_time < 0)
+                        {
+                            effect_sound_time += effect_sound_interval;
+                            effect_source.Play();
+                        }
+                    }
                     break;
                 case LaserMode.Damage:
                     Cookie cookie = hit.collider.GetComponent<Cookie>();
                     if (cookie != null)
+                    {
                         cookie.Damage(damage * Time.deltaTime);
+
+                        effect_sound_time -= Time.deltaTime;
+                        if (effect_sound_time < 0)
+                        {
+                            effect_sound_time += effect_sound_interval;
+                            effect_source.Play();
+                        }
+                    }
                     break;
             }
         }
