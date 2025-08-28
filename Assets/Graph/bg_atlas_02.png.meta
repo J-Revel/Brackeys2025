@@ -132,15 +132,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bg_atlas_02_0
+      name: CookieMaker
       rect:
         serializedVersion: 2
-        x: 2245
-        y: 1385
-        width: 412
-        height: 412
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1933
+        y: 1415
+        width: 684
+        height: 745
+      alignment: 9
+      pivot: {x: 0.5, y: 0.97456187}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -149,6 +149,94 @@ TextureImporter:
       bones: []
       spriteID: 65e1e54d943f76f4da9e95955436cfdc
       internalID: 1609191435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CookieMaker Top
+      rect:
+        serializedVersion: 2
+        x: 2730
+        y: 1445
+        width: 167
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5090b323781721f4b8e2a1205aa61e9f
+      internalID: 1870392420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lever
+      rect:
+        serializedVersion: 2
+        x: 3043
+        y: 1041
+        width: 62
+        height: 258
+      alignment: 9
+      pivot: {x: 0.50000393, y: 0.009878232}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e822a18423a75114e8c18bc00aba9617
+      internalID: -2140795438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lever Ground
+      rect:
+        serializedVersion: 2
+        x: 3031
+        y: 939
+        width: 102
+        height: 62
+      alignment: 9
+      pivot: {x: 0.5539718, y: 0.08564217}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dbd70566e9dda345a1e6988fd273252
+      internalID: -1371225408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grow Laser
+      rect:
+        serializedVersion: 2
+        x: 3174
+        y: 987
+        width: 460
+        height: 619
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 279eb6228f68e21429c8cbb350ddf27e
+      internalID: -2125635523
       vertices: []
       indices: 
       edges: []
@@ -167,8 +255,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+      CookieMaker: 1609191435
+      CookieMaker Top: 1870392420
+      Grow Laser: -2125635523
+      Lever: -2140795438
+      Lever Ground: -1371225408
       Workplan_01: -1115040015
-      bg_atlas_02_0: 1609191435
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
