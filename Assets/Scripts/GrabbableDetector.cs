@@ -31,6 +31,11 @@ public class GrabbableDetector : MonoBehaviour
         }
     }
 
+    public void Detach()
+    {
+        grabbable_in_range = null;
+    }
+
     public void Start()
     {
         rb = GetComponentInParent<Rigidbody2D>();
