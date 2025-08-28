@@ -164,6 +164,7 @@ MonoBehaviour:
   impact_vfx: {fileID: 1781823081300601935}
   line_renderer: {fileID: 0}
   mode: 1
+  damage: 1
 --- !u!1 &6081491600162717141
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,9 +304,9 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 10
+  m_Mass: 15
   m_LinearDamping: 3
-  m_AngularDamping: 1
+  m_AngularDamping: 2
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -394,6 +395,12 @@ MonoBehaviour:
   altitude_force: 100
   patrolling_step_duration: 5
   patrolling_step_force: 100
+  follow_target: 0
+  target_angle_offset: 0
+  balance_torque: 250
+  balance_angle_smoothstep:
+    x: 0
+    y: 0.62831855
 --- !u!1001 &2241388291061737808
 PrefabInstance:
   m_ObjectHideFlags: 0
