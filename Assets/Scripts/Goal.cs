@@ -1,9 +1,7 @@
 using UnityEngine;
-using TMPro;
 public class Goal : MonoBehaviour
 {
     public static int score;
-    private TMP_Text label;
     void Start()
     {
         score = 0;
