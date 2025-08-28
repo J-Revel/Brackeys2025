@@ -14,6 +14,7 @@ public class LaserDisplay : MonoBehaviour
     public Transform impact_vfx;
     public LineRenderer line_renderer;
     public LaserMode mode;
+    public float damage = 1;
 
     void Start()
     {
@@ -39,7 +40,7 @@ public class LaserDisplay : MonoBehaviour
                 case LaserMode.Damage:
                     Cookie cookie = hit.collider.GetComponent<Cookie>();
                     if (cookie != null)
-                        Destroy(cookie.gameObject);
+                        cookie.Damage(damage * Time.deltaTime);
                     break;
             }
         }

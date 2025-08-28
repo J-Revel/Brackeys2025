@@ -202,3 +202,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88d025d3105516745ade50c5a55a5e3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Cookie
+  health: 3
+  max_health: 3
+  renderer: {fileID: 1836502271637774101}
+  hurt_component:
+    Damping: 0.4
+    Frequency: 6
+    ClampSettings:
+      ClampMin: 0
+      ClampMinValue: 0
+      ClampMinInitial: 0
+      ClampMinBounce: 0
+      ClampMax: 0
+      ClampMaxValue: 10
+      ClampMaxInitial: 0
+      ClampMaxBounce: 0
+    SpringDebug:
+      CurrentValue: 0
+      TargetValue: 0
+    UnifiedSpring: 0
+    CurrentValueDisplay: 0
+    TargetValueDisplay: 0
+    VelocityDisplay: 0

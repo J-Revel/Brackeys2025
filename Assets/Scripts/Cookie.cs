@@ -1,3 +1,4 @@
+using MoreMountains.Feedbacks;
 using UnityEngine;
 
 public class Cookie : MonoBehaviour
@@ -6,6 +7,7 @@ public class Cookie : MonoBehaviour
     public float max_health;
     public Renderer renderer;
     private MaterialPropertyBlock property_block;
+    public MMSpringFloat hurt_component;
 
     private void Start()
     {
@@ -15,7 +17,8 @@ public class Cookie : MonoBehaviour
     {
         health -= damage;
         renderer.GetPropertyBlock(property_block);
-        property_block.SetFloat("_Damage", 1 - health / max_health);
+        property_block.SetFloat("_Destruction", 1 - health / max_health);
+        renderer.SetPropertyBlock(property_block);
         if(health <= 0)
         {
             CookieDestructionHandler.instance.on_destruction(transform.position, transform.lossyScale);
