@@ -16,8 +16,8 @@ public class Timer : MonoBehaviour
         if (timer <= 0) return;
         timer -= Time.deltaTime;
         label.text = string.Format("Time: {0:00}:{1:00}",
-                                    Mathf.FloorToInt(timer) / 60,
-                                    Mathf.FloorToInt(timer) % 60 + 1);
+                                    Mathf.FloorToInt(timer + 1) / 60,
+                                    Mathf.FloorToInt(timer + 1) % 60);
         if (timer <= 0)
         {
             Destroy(GameObject.Find("Player"));

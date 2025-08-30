@@ -31,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
     private void OnDestroy()
     {
         Cursor.lockState = CursorLockMode.None;
+        GameObject.Find("Canvas").transform.Find("GameOver").gameObject.SetActive(true);
     }
 
     void Update()
